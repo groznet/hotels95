@@ -1,0 +1,355 @@
+/*Global styles*/
+
+/* Global colors */
+:root {
+    --color-primary: #1A3636;
+    --color-secondary: #40534C;
+
+    --color-text: #40534C;
+    --color-border: #ccc;
+
+	--color-accent: #2196F3;
+
+    --color-success: #88c459;
+    --color-error: #f5414f;
+    --color-warning: #ffd137;
+}
+
+body {
+	margin: 0;	/* Отступ снаружи*/
+	color: var(--color-secondary)
+}
+
+img {
+	width: 100%
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+section,
+footer {
+	padding: 25px 0;
+}
+
+button {
+	border: 0;
+	padding: 0.5em;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid #eee;
+}
+
+section .heading {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header {
+/*	background: #fff;
+	position: fixed;*/
+}
+
+/*End: Global styles*/
+.topbar {
+	background: #eee;
+}
+
+.topbar p,
+.midbar p,
+.midbar h1,
+.midbar h3 {
+	margin: 0.5em 0;
+}
+
+.midbar {
+	padding-bottom: 5px;
+}
+
+.midbar .logo h1 {
+	margin-bottom: 0;
+}
+
+.midbar .logo h1 a {
+	color: var(--color-accent);
+}
+
+.midbar .contact h3 a {
+	color: inherit;
+}
+
+.midbar .contact p a,
+.midbar .worktime p {
+	color: #777;
+}
+
+.topbar .container,
+.midbar .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav.mainmenu {
+	background: #9E9E9E;
+	display: flex;
+	padding: 1em 0;
+	align-items: center;
+}
+
+nav.mainmenu a {
+	color: #fff;
+}
+
+nav.mainmenu .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Hotel styles*/
+section.hotels .container {
+	display: flex;
+	column-gap: 1em;
+	padding-bottom: 2em;
+	align-items: flex-end; /* Выравнить внизу */
+}
+
+
+/*End: Hotel styles*/
+
+/*Reviews styles*/
+section.reviews .container {
+	display: flex;
+	column-gap: 1em;
+	padding-bottom: 1em;
+}
+
+section.reviews .container .testimony {
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 1em;
+	border-radius: 1em
+}
+
+section.reviews .container img {
+	width: 25%
+}
+
+/*End: Reviews styles*/
+
+
+/*Services styles*/
+section.services .container {
+	display: flex;
+	padding-bottom: 1em;
+}
+
+section.services .container .service {
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 1em
+}
+
+section.services .container img {
+	width: 25%
+}
+/*End: Services styles*/
+
+/*Footer styles*/
+footer {
+	padding-top: 25px;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+footer .container ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.about .container {
+	display: flex;
+	gap: 1em;
+}
+
+.about .container .col-1-2 {
+	width: 50%;
+}
+
+section.breadcrumb p,
+section.breadcrumb a {
+	color: #999;
+}
+
+section.contact .flex {
+	display: flex;
+}
+
+section.contact .container .col-1-2 {
+	width: 50%;
+}
+
+section.news .container {
+	display: flex;
+	gap: 1em;
+}
+
+section.news .container .sidebar {
+	width: 30%;
+/*	background: skyblue;*/
+}
+
+section.news .container .sidebar .widget,
+section.news .container .article {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+}
+
+section.news .container .sidebar ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+section.news .container .main {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+section.news .container .article {
+	display: flex;
+	gap: 1em;
+}
+
+section.news .container .article img {
+	width: 30%;
+}
+
+section.news .container .sidebar .widget h3,
+section.news .container .article h3 {
+	margin-top: 0;
+}
+
+select,
+input,
+textarea {
+	padding: 0.5rem 1rem;
+	/*	border-radius: 0;*/
+	border: 1px solid #ccc;
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+   outline: 1px solid #2196F3;
+}
+
+input[type=submit] {
+	background: #2196F3;
+	color: #fff;
+	border-color: #2196F3;
+	cursor: pointer;
+}
+
+.black {
+	color: #333;
+}
+
+.left-bar{
+	background-color: red;
+}
+
+section.hotels .container {
+    display: flex;
+    column-gap: 1em;
+    padding-bottom: 2em;
+    justify-content: center;
+	align-items: flex-start
+}
+
+.shadow:hover {
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);		
+}
+
+
+
+/*Global styles*/
+.container {
+	margin: 0 auto;
+}
+
+.p-8 {
+	padding: 8px;
+}
+
+/*If dekstop*/
+@media screen and (min-width: 768px) {
+	.container {
+		width: 1280px;
+	}
+
+	section.hotels .container .hotel {
+		width: 33.33%;
+	}	
+}
+
+/*If mobile*/
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		gap: 1em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	section.hotels .container .hotel {
+		width: 100%;
+	}
+
+	.about .container .col-1-2 {
+		width: 100%;
+	}
+
+/*	Главное меню*/
+	nav.mainmenu .container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	/*	Header styles*/
+	.midbar .container,
+	nav.mainmenu {
+		display: block;
+	}
+
+	.midbar .container, nav.mainmenu {
+		overflow: auto;
+	}
+
+	.contact,
+	.worktime {
+		width: 50%;
+		float: left;
+	}
+
+	.hide-mob {
+		display: none;
+	}
+
+	.keywordInput {
+		width: 45%;
+	}
+
+}
+
+iframe {
+	width: 100%;
+}
